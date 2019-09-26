@@ -1,22 +1,144 @@
-.App {
+#root {
+  width: 50vw;
+  height: 50vh;
+  margin: 0 auto;
+  top: 30%;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+}
+
+.parentDiv {
   text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.App-logo {
-  height: 40vmin;
+#greenText {
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.highScore {
+  font-weight: bold;
+  float: left;
 }
 
-.App-link {
-  color: #09d3ac;
+.currentScore {
+  font-weight: bold;
+  float: right;
+}
+
+#tryAgainButton {
+  display: none;
+}
+
+#congrats {
+  display: none;
+}
+
+#pastNum {
+  display: none;
+  font-size: 6ex;
+}
+
+#youScored {
+  display: none;
+}
+
+.messageDiv {
+  padding-top: 5%;
+}
+
+.message {
+  font-size: 4ex;
+  font-weight: bold;
+}
+
+.secondMessage {
+  font-size: 3ex;
+  font-weight: bold;
+}
+
+.numberMessage {
+  font-weight: bold;
+  font-size: 8ex;
+  display: block;
+}
+
+.btn {
+  margin: 0.125em;
+}
+
+.fadeOut{
+  opacity:0;
+  transition: opacity 0.5s;
+}
+.fadeIn{
+  opacity:1;
+  transition: opacity 0.5s;
+}
+
+@media only screen and (max-width: 1125px) {
+  .numberMessage {
+    font-size: 4ex;
+  }
+
+  #pastNum {
+    font-size: 4ex;
+  }
+
+  .message {
+    font-size: 3ex;
+  }
+
+  .secondMessage {
+    font-size: 2.5ex;
+  }
+
+  #congrats {
+    font-size: 3.5ex;
+  }
+
+  .btn {
+    font-size: 2.5ex;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .numberMessage {
+    font-size: 3ex;
+  }
+
+  #pastNum {
+    font-size: 3ex;
+  }
+
+  .message {
+    font-size: 2ex;
+  }
+
+  .secondMessage {
+    font-size: 1.5ex;
+  }
+
+  #congrats {
+    font-size: 2.5ex;
+  }
+
+  .btn {
+    font-size: 1.5ex;
+  }
+
+  .highScore {
+    font-weight: bold;
+    float: none;
+  }
+  
+  .currentScore {
+    font-weight: bold;
+    float: none;
+  }
 }
