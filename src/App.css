@@ -105,31 +105,39 @@
   .btn {
     font-size: 2.5ex;
   }
-}
+} 
 
 @media only screen and (max-width: 500px) {
   .numberMessage {
-    font-size: 3ex;
+    font-size: 1ex;
+  }
+
+  #root {
+    width: 90vw;
   }
 
   #pastNum {
-    font-size: 3ex;
+    font-size: 1.5ex;
   }
 
   .message {
-    font-size: 2ex;
+    font-size: 1ex;
   }
 
   .secondMessage {
-    font-size: 1.5ex;
+    font-size: 1ex;
+  }
+
+  #currentNum {
+    font-size: 2ex;
   }
 
   #congrats {
-    font-size: 2.5ex;
+    font-size: 1.5ex;
   }
 
   .btn {
-    font-size: 1.5ex;
+    font-size: 0.75ex;
   }
 
   .highScore {

@@ -14,6 +14,7 @@ export default class Game extends React.Component {
             message: "Will the next number be Higher or Lower than...",
             secondMessage: "Let's Find out shall we?",
             congrats: "",
+            popMsg: "Nice One",
         })
         this.isHigher = this.isHigher.bind(this);
         this.isLower = this.isLower.bind(this);
@@ -210,7 +211,7 @@ export default class Game extends React.Component {
                 </div>
                 <div className="numberDiv">
                     <span className="numberMessage" id="currentNum">{this.state.currentNum}</span>
-                    <span className="numberMessage" id="pastNum">Unlucky friend, it was {this.state.pastNum}</span>
+                    <span className="numberMessage" id="pastNum">Oh no it was {this.state.pastNum}</span>
                     <span className="numberMessage" id="youScored">You Scored:</span>
                     <span className="numberMessage" id="congrats">{this.state.congrats}</span>
                     <span className="secondMessage" id="secondMessage">{this.state.secondMessage}</span>
